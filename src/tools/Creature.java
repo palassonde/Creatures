@@ -2,18 +2,29 @@ package tools;
 
 public class Creature {
 	
-	int hp;
-	int attack;
-	
+	public String name;
+	public int hp;
+	public Attack attack;
 	
 	public Creature(){
-		hp = 10;
-		attack = 0;
+		
+		this.name = "Bastard";
+		this.hp = 20;
+		this.attack = new Attack();
 	}
 	
-	public Creature(int a, int b){
-		hp = a;
-		attack = b;
+	public Creature(String name, int attack){
+		
+		this.name = name;
+		this.hp = 20;
+		this.attack = new Attack();
+	}
+	
+	public Creature(String name, int hp, int attack){
+		
+		this.name = name;
+		this.hp = hp;
+		this.attack = new Attack();
 	}
 
 }
