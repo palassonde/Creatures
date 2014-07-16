@@ -25,7 +25,7 @@ public class Attack {
 		 Random rand = new Random();
 		 int damage = rand.nextInt((max - min) + 1) + min;
 		 
-		 
+		  
 
 		 return damage;	
 	}
